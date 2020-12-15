@@ -83,8 +83,12 @@ def my_font():
         a,b = var1.get(),var2.get()
         if a==1:
             a='bold'
+        else:
+            a='normal'
         if b==1:
             b='italic'
+        else:
+            b='roman'
         my_font = Font(family=x,size=y,weight=a,slant=b,underline=var3.get())
         textarea.config(font=my_font)
     #CREATING A FONT GUI.
